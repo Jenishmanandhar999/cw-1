@@ -1,0 +1,214 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <style>
+        /* Reset default browser styles */
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Navigation bar */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333333;
+        }
+
+        nav ul li a:hover {
+            color: #ff5500;
+            text-decoration: underline;
+        }
+
+        nav ul li a.active {
+            color: #ff5500;
+            font-weight: bold;
+        }
+/* 
+        nav ul li a:hover::before {
+            content: "> ";
+        }
+
+        nav ul li a:hover::after {
+            content: " <";
+        }
+
+        nav ul li a:hover span::before {
+            content: "[ ";
+        }
+
+        nav ul li a:hover span::after {
+            content: " ]";
+        } */
+        nav ul li a.active {
+            color: #ff5500;
+            font-weight: bold;
+        }
+
+        /* Hero section */
+        .hero {
+            background-image: url('./pic1.png');
+            background-size: cover;
+            background-position: center;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1 span {
+            color: #ff5500;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: black;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff5500;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            background-color: #ff7733;
+        }
+
+        /* Featured clothing section */
+        .featured-clothing {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 15px;
+            opacity: 0.8;
+        }
+
+        .featured-clothing h2 {
+            font-size: 28px;
+            color: #333333;
+            margin-bottom: 20px;
+            margin-top: 70px;
+            height: 25px;
+        }
+
+        .featured-clothing h3 {
+            font-size: 24px;
+            color: #ff5500;
+            margin-bottom: 10px;
+        }
+
+        /* Media Queries for Responsive Design */
+
+        /* Small devices (mobile phones) */
+        @media only screen and (max-width: 600px) {
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .btn {
+                font-size: 14px;
+            }
+
+            .featured-clothing h2 {
+                font-size: 24px;
+            }
+
+            .featured-clothing h3 {
+                font-size: 20px;
+            }
+        }
+
+        /* Medium devices (tablets) */
+        @media only screen and (min-width: 601px) and (max-width: 992px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.php">Home</a></li>
+                <li><a href="./About.html" class="active">About Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>About our Store <span>Mero Clothes !</span></h1>
+            <div class="featured-clothing">
+                <h2>Our Mission</h2>
+                <p>Our mission is to provide high-quality clothes that combine style, comfort, and durability. We strive
+                    to offer a wide range of options to cater to diverse tastes and preferences. Whether you're an
+                    athlete looking for performance footwear or a fashion enthusiast searching for trendy clothes, we have
+                    you covered.</p>
+                <h2>Our Story</h2>
+                <p>Established in 2005, Mero Clothes has grown from a small local store to a reputable online retailer. We
+                    started with a passion for clothes and a commitment to delivering exceptional customer service. Today,
+                    we are proud to serve customers worldwide and continue to expand our product offerings to meet their
+                    needs.</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html> 
+
+

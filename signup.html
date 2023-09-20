@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<style>
+    /* Reset default browser styles */
+    body,
+    h1,
+    h2,
+    h3,
+    p,
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        color: black;
+    }
+
+    /* Global styles */
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+        background-color: #f2f2f2;
+        color: #d0caca;
+        background-image: url(./pic1.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    /* Navigation bar */
+    header {
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333333;
+}
+
+nav ul li a:hover {
+  color: #ff5500;
+}
+
+nav ul li a.active {
+  color: #ff5500;
+  font-weight: bold;
+}
+
+nav ul li a:hover span {
+  text-decoration: underline;
+}
+/* 
+nav ul li a:hover:before {
+  content: "> ";
+}
+
+nav ul li a:hover:after {
+  content: " <";
+}
+
+nav ul li a:hover span:before {
+  content: "[ ";
+}
+
+nav ul li a:hover span:after {
+  content: " ]";
+} */
+
+
+    /* Login section */
+    .signup {
+        background-color: #ffffff;
+        padding: 20px;
+        margin-top: 30px;
+        opacity: 0.8;
+        max-width: 400px;
+        margin: 0 auto;
+        background-image: url(./pic1.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .signup h2 {
+        margin-top: 50px;
+        font-size: 28px;
+        color: #333333;
+        margin-bottom: 30px;
+    }
+
+    .signup h1 {
+        text-align: center;
+        color: #ff5500;
+        font-size: 40px;
+    }
+
+    .signup input[type="text"],
+    .signup input[type="password"] {
+        width: 100%;
+        padding: 9px;
+        margin-bottom: 30px;
+        border: 1px solid #d0caca;
+        border-radius: 8px;
+    }
+
+    .signup input[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #ff5500;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .signup input[type="submit"]:hover {
+        background-color: #ff7733;
+    }
+
+    .signup p {
+        text-align: center;
+        margin-top: 10px;
+        color: #333333;
+    }
+
+    .signup p a {
+        color: #ff5500;
+        font-weight: bold;
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.php">Home</a></li>
+                <li><a href="./About.html">About Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="signup">
+        <h1>Mero Clothes!</h1>
+        <h2>Sign Up</h2>
+        <form id="signupForm" method="post" action="signup.php">
+            <input type="text" name="name" id="fullname" placeholder="Full Name" required>
+            <input type="text" name="email" id="email" placeholder="Email" required>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <input type="password" name="password_confirmation" id="repeat-password" placeholder="Repeat-password" required>
+            <input type="submit" value="Sign Up">
+        </form>
+        <p>Already have an account? <a href="login.php">Log in</a></p>
+    </section>
+
+    <!-- <script>
+        document.getElementById("signupForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Retrieve input values
+            var fullname = document.getElementById("fullname").value;
+            var email = document.getElementById("email").value;
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var repeatpassword = document.getElementById("repeat-password").value;
+
+            // Check if the username already exists in local storage
+            var existingUser = localStorage.getItem(username);
+
+            if (existingUser) {
+                // Display an error message if the username already exists
+                alert("Username already exists. Please choose a different username.");
+            } else {
+                // Create a user object
+                var user = {
+                    fullname: fullname,
+                    emal: email,
+                    username: username,
+                    password: password,
+                    repeatpassword: repeat-password
+                };
+
+                // Store the user data in local storage
+                localStorage.setItem(username, JSON.stringify(user));
+
+                // Registration successful, redirect to shop.html
+                window.location.href = "shop.html";
+            }
+        });
+    </script> -->
+</body>
+
+</html>

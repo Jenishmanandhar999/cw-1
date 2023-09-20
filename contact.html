@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        /* Reset default browser styles */
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            height: 68px;
+        }
+
+        /* Navigation bar */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333333;
+        }
+
+        nav ul li a:hover {
+            color: #ff5500;
+            text-decoration: underline;
+        }
+
+        nav ul li a.active {
+            color: #ff5500;
+            font-weight: bold;
+        }
+/* 
+        nav ul li a:hover::before {
+            content: "> ";
+        }
+
+        nav ul li a:hover::after {
+            content: " <";
+        }
+
+        nav ul li a:hover span::before {
+            content: "[ ";
+        }
+
+        nav ul li a:hover span::after {
+            content: " ]";
+        } */
+
+        /* Contact section */
+        .contact {
+            background-color: #eee8e8;
+            padding: 20px;
+            margin-top: 40px;
+            opacity: 0.8;
+        }
+
+        .contact h2 {
+            font-size: 28px;
+            color: #ff5500;
+            margin-bottom: 20px;
+            margin-top: 70px;
+        }
+
+        .contact p {
+            font-size: 20px;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact label {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .contact input[type="text"],
+        .contact input[type="email"],
+        .contact textarea {
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        .contact textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .contact button {
+            padding: 10px 20px;
+            background-color: #ff5500;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: #ff7733;
+        }
+
+        /* Media Queries for Responsive Design */
+
+        /* Small devices (mobile phones) */
+        @media only screen and (max-width: 600px) {
+            .contact h2 {
+                font-size: 24px;
+            }
+
+            .contact p {
+                font-size: 16px;
+            }
+
+            .contact label {
+                font-size: 16px;
+            }
+
+            .contact input[type="text"],
+            .contact input[type="email"],
+            .contact textarea {
+                font-size: 14px;
+            }
+
+            .contact button {
+                font-size: 14px;
+            }
+        }
+
+        /* Medium devices (tablets) */
+        @media only screen and (min-width: 601px) and (max-width: 992px) {
+            .contact h2 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.php">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us </h2>
+            <p>Have any questions or feedback? Fill out the form below to get in touch with us.</p>
+            <form action="contact.php">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
